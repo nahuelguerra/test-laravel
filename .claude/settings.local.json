@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where:*)",
+      "Bash(mysql:*)",
+      "Bash(sc query:*)",
+      "Bash(\"C:/xampp/php/php\" -v)",
+      "Bash(\"C:/xampp/mysql/bin/mysql\" --version)",
+      "Bash(\"C:/xampp/apache/bin/httpd\" -v)",
+      "Bash(php -v:*)",
+      "Bash(\"C:/xampp/mysql/bin/mysql\" -u root -e \"SELECT VERSION\\(\\);\")",
+      "Bash(\"C:/xampp/mysql/bin/mysql_install_db.exe\" --datadir=\"C:/xampp/mysql_3050/data\" --basedir=\"C:/xampp/mysql\")",
+      "Bash(\"C:/xampp/mysql/bin/mysql_install_db.exe\":*)",
+      "Bash(\"C:/xampp/mysql/bin/mysql\":*)",
+      "Bash(netstat:*)",
+      "Bash(\"C:/xampp/mysql/bin/mysqladmin\" -u root -P 3050 -h 127.0.0.1 shutdown)",
+      "Bash(php artisan db:show:*)",
+      "Bash(composer require:*)",
+      "Bash(php artisan migrate:*)",
+      "Bash(php artisan tenant:artisan:*)",
+      "Bash(php artisan tinker:*)",
+      "Bash(php artisan list:*)"
+    ]
+  }
+}
