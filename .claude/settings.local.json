@@ -19,7 +19,13 @@
       "Bash(php artisan migrate:*)",
       "Bash(php artisan tenant:artisan:*)",
       "Bash(php artisan tinker:*)",
-      "Bash(php artisan list:*)"
+      "Bash(php artisan list:*)",
+      "Bash(php artisan route:list --name=users)",
+      "Bash(curl -s -L -c /tmp/cookies.txt -b /tmp/cookies.txt http://127.0.0.1:8000/login)",
+      "Bash(curl -s -L -c /tmp/cookies.txt -b /tmp/cookies.txt http://127.0.0.1:8000/users -w \"\\\\n%{http_code}\")",
+      "Bash(php artisan view:clear)",
+      "Bash(curl -s -b /tmp/cookies2.txt http://127.0.0.1:8000/tenants -w \"\\\\nHTTP_CODE:%{http_code}\")",
+      "Bash(curl -s -b /tmp/cookies2.txt http://127.0.0.1:8000/tenants)"
     ]
   }
 }

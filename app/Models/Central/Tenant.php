@@ -15,7 +15,23 @@ class Tenant extends BaseTenant
         'name',
         'domain',
         'database',
+        'is_active',
     ];
+
+    /**
+     * Datos temporales para provisioning (no se persisten en BD).
+     * Se usan en TenantObserver para crear el usuario admin inicial.
+     */
+    public ?string $admin_name = null;
+
+    public ?string $admin_email = null;
+
+    protected function casts(): array
+    {
+        return [
+            'is_active' => 'boolean',
+        ];
+    }
 
     /**
      * Get the database name for this tenant.

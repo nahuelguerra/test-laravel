@@ -15,6 +15,14 @@
                     <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
+                    @role('super_admin')
+                        <flux:sidebar.item icon="building-office" :href="route('tenants.index')" :current="request()->routeIs('tenants.*')" wire:navigate>
+                            {{ __('Concesionarias') }}
+                        </flux:sidebar.item>
+                    @endrole
+                    <flux:sidebar.item icon="users" :href="route('users.index')" :current="request()->routeIs('users.*')" wire:navigate>
+                        {{ __('Usuarios') }}
+                    </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
